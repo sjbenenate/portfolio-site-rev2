@@ -1,0 +1,643 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles  Mobile
+   ========================================================================== */
+
+/* Base Styles =======================================*/
+h1, h2, h3, h4 {
+  font-family: 'Lora', sans-serif;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: 'Source Sans Pro' sans-serif;
+}
+
+a {
+  text-decoration: none;
+  /*color: #4f626f;*/
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.7em;
+}
+
+span {
+  font-family: 'Lora', sans-serif;
+}
+
+img {
+  width: 100%;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+/* Page Setup =======================================*/
+html {
+    background: url(../img/albany-river.png) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+html, body, header, .flex-wrapper {
+  height: 100%;
+}
+
+body {
+  width: 96%;
+  margin: auto;
+  max-width: 1024px;
+}
+
+.content-center {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.box-style {
+  background: #222;
+  background:rgba(0,0,0,0.7);
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.7em;
+  border-radius: 10px;
+}
+
+/* Page 1 Intro  =======================================*/
+#intro {
+   /* set the display to flex and use the justify-content & align-items properties to center the text within the div*/
+    background: #222;
+    background:rgba(0,0,0,0.7);
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.7em;
+    border-radius: 10px;
+    padding: 2%;
+    width: 75%;
+    height: auto;
+
+    flex-direction: column;
+}
+
+#intro p {
+  width: 96%;   /* IE hack to fit text in a flexbox */
+}
+
+#intro h1 {
+  margin-bottom: 2%;
+  line-height: 1.5em;
+}
+
+#intro p span {
+  font-family: 'Lora', sans-serif;
+}
+
+/* Work Section =======================================*/
+#work {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  /*background: #fff;
+  border-radius: 10px;*/
+  width: 94%;
+  padding: 0 3%;  /* padding on sides x2 + width above should = 100% */
+}
+
+#work h2 {
+  width: 100%;
+  margin-left: 4%;
+  padding-bottom: 0.5em;
+}
+
+.project {
+  flex: 1 1 100%;
+  margin: 2% 4%;
+}
+
+.project-img {
+  width: 100%;
+  padding-bottom: 100%;
+  background: #555;
+}
+
+.project-info {
+  padding-bottom: 4%;
+}
+
+.pr-jubilee {
+  background: url(../img/jubilee-austen.png) no-repeat center;
+  background-size: cover;
+}
+
+.pr-unplugged {
+  background: url(../img/unplugged.png) no-repeat center;
+  background-size: cover;
+}
+
+.pr-election {
+  background: url(../img/election-map.png) no-repeat center;
+  background-size: cover;
+  border: 2px solid black;
+}
+
+.pr-8-ball {
+  background: url(../img/magic-8-ball.png) no-repeat center;
+  background-size: cover;
+  border: 2px solid black;
+}
+
+.pr-cat {
+  background: url(../img/lol-cat-clock.png) no-repeat center;
+  background-size: cover;
+  border: 2px solid black;
+}
+
+.pr-rogue {
+  background: url(../img/rogue-pickings.png) no-repeat center;
+  background-size: cover;
+}
+
+/* Footer =======================================*/
+footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-box-pack: space-between;
+  -moz-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  margin-top: 20%;
+  margin-bottom: 5%;
+}
+
+#contact, .footer-icon, #follow {
+  width: 100%;
+  height: 175px;
+}
+
+#contact, #follow {
+  /*background: #fff;
+  border-radius: 10px;*/
+
+  flex-direction: column;
+}
+
+#contact {
+  order: 1;
+}
+
+#follow {
+  order: 3;
+}
+
+.footer-icon {
+  order: 2;
+  margin-top: 10%;
+  margin-bottom: 40%;
+}
+
+ul {
+  padding: 0
+}
+
+#contact h3 {
+  margin: 0;
+}
+
+#contact h2, #follow h2 {
+  margin: 0 0 0.2em 0;
+}
+
+#contact ul, #follow ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+
+
+#contact ul i {
+  padding-right: 2%;
+  display: inline;
+}
+
+#follow ul {
+ width: 100%;
+}
+
+#follow ul li {
+  display: inline-block;
+  padding-right: 10%;
+  font-size: 2em;
+}
+
+#follow ul li.last-media {
+  padding-right: 0;
+}
+
+.footer-icon {
+  background: url(../img/fish-icon.png) no-repeat center;
+  background-size: contain;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+    /* Tablet styles here*/
+
+    body {
+      width: 94%;
+    }
+
+    #intro {
+      width: 60%;
+      padding: 2% 3%;
+    }
+
+    .project {
+      flex: 1 1 40%;
+      margin: 2% 4%;
+    }
+
+
+    #contact, .footer-icon, #follow {
+      width: 40%;
+    }
+
+    #contact {
+      order: 2;
+    }
+
+    #follow {
+      order: 3;
+    }
+
+    .footer-icon {
+      order: 1;
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 20%;
+    }
+}
+
+
+
+@media only screen and (min-width: 940px) {
+    /* Desktop styles here*/
+
+    body {
+      width: 90%;
+    }
+
+    #intro {
+      width: 40%;
+      padding: 2% 4%;
+    }
+
+
+    .project {
+      flex: 1 1 25%;
+      margin: 2% 4%;
+    }
+
+    /* Footer Desktop ====================*/
+    #contact, .footer-icon, #follow {
+      width: 33.33%;
+    }
+
+    #contact {
+      order: 1;
+    }
+
+    #follow {
+      order: 3;
+    }
+
+    .footer-icon {
+      order: 2;
+      margin-bottom: 0;
+    }
+}
+
+
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

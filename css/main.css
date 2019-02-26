@@ -335,6 +335,11 @@ main {
   background-size: cover;
 }
 
+.pr-kids-gloves {
+  background: url(../img/kidsGloves.png) no-repeat center;
+  background-size: cover;
+}
+
 /* Footer =======================================*/
 footer {
   display: -webkit-box;
@@ -768,6 +773,7 @@ ul {
     .project {
       flex: 1 1 40%;
       margin: 2% 4%;
+      max-width: 40%;
     }
 
     .project-img {
@@ -826,6 +832,7 @@ ul {
     .project {
       flex: 1 1 25%;
       margin: 2% 4%;
+      max-width: 25%;
     }
 
     /* Footer Desktop ====================*/

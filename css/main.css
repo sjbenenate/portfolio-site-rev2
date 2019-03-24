@@ -336,10 +336,14 @@ main {
 }
 
 .pr-kids-gloves {
-  background: url(../img/kidsGloves.png) no-repeat center;
+  background: url(../img/kids-gloves.png) no-repeat center;
   background-size: cover;
 }
 
+.pr-accelerate {
+  background: url(../img/kids-gloves.png) no-repeat center;
+  background-size: cover;
+}
 /* Footer =======================================*/
 footer {
   display: -webkit-box;

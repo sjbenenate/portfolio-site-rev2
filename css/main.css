@@ -96,6 +96,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles  Mobile
    ========================================================================== */
+/* Debug Styles =======================================*/
+.hide {
+  display: none;
+}
 
 /* Base Styles =======================================*/
 
@@ -282,8 +286,8 @@ main {
 
 #work h2 {
   width: 100%;
-  margin-left: 4%;
   padding-bottom: 0.5em;
+  text-align: center;
 }
 
 .project {
@@ -341,9 +345,36 @@ main {
 }
 
 .pr-accelerate {
-  background: url(../img/kids-gloves.png) no-repeat center;
+  background: url(../img/accelerate-preview.png) no-repeat center;
   background-size: cover;
 }
+
+/* Skills list Section =======================================*/
+#skills-list.box-style {
+  margin-top: 20%;
+  padding: 20px 0;
+}
+
+#skills-list h2 {
+  text-align: center;
+}
+
+#skills-list ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+#skills-list ul li {
+  text-align: center;
+  flex-basis: 30%;
+  display: inline;
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
 /* Footer =======================================*/
 footer {
   display: -webkit-box;

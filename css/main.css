@@ -349,6 +349,11 @@ main {
   background-size: cover;
 }
 
+.pr-binary-calculator {
+  background: url(../img/binary-calculator-preview.png) no-repeat center;
+  background-size: cover;
+}
+
 /* Skills list Section =======================================*/
 #skills-list.box-style {
   margin-top: 20%;

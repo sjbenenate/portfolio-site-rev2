@@ -1,0 +1,44 @@
+body {
+  width: 100%;
+  background: #8c7415; 
+}
+
+.site-inner {
+  padding-top: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#res {
+  background-color: lightgray;
+  border: 2px solid black;
+  height: 48px;
+  font-size: 20px;
+  text-align: right;
+  padding: 0 4px;
+}
+
+#btn0, #btn1 {
+  background-color: lightgreen;
+  color: brown;
+}
+
+#btnClr, #btnEql {
+  background-color: darkgreen;
+  color: white;
+}
+
+#btnSum, #btnSub, #btnMul, #btnDiv {
+  background: black;
+  color: red;
+} 
+
+button {
+  width: 25%;
+  height: 36px;
+  font-size: 18px;
+  margin: 0px;
+  float: left;
+}

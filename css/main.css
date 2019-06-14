@@ -475,9 +475,8 @@ ul {
 }
 
 #follow ul li {
-  display: inline-block;
+  display: block;
 
-  padding-right: 10%;
   font-size: 2em;
 }
 #follow ul li.last-media {

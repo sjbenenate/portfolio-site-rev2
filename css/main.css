@@ -360,6 +360,11 @@ main {
   background-size: cover;
 }
 
+.pr-weather-station {
+  background: url(../img/weather-station.png) no-repeat center;
+  background-size: cover;
+}
+
 /* Skills list Section =======================================*/
 #skills-list.box-style {
   margin: 20% auto 0 auto;
